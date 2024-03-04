@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.mkyong.HelloControllerTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.254 s <<< FAILURE! - in com.mkyong.HelloControllerTests
+welcome_ok  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloController' defined in file [C:\Users\3929\Downloads\spring-boot\spring-boot-hello-world\target\classes\com\mkyong\HelloController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mkyong.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mkyong.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
